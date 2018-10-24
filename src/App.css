@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#videos {
+  margin: 2em 5em 2em 5em;
+}
+
+#login-form {
+  margin: 0 5em 0 5em;
+  padding: 2em 2em 2em 2em;
+}
+
+#login-div {
+  width: 40%;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 1px 1px 25px 1px;
+  margin: 5em 2em 0em 2em;
+  padding: 3em 0em 3em 0em;
+}
+
+#signup-form {
+  margin: 0 5em 0 5em;
+  padding: 2em 2em 2em 2em;
+}
+
+#signup-div {
+  width: 40%;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 1px 1px 25px 1px;
+  margin: 5em 2em 0em 2em;
+  padding: 3em 0em 3em 0em;
+}
+
+#form-container {
+  display: flex;
+}
+
+#profile-name {
+  font-size: 6em;
+  font-family: 'Poppins', sans-serif;
+}
+
+#homepage-title {
+  font-size: 6em;
+  font-family: 'Poppins', sans-serif;
+}
