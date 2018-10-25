@@ -23,8 +23,8 @@ const PageButton = (props) => {
   return (
     <Fragment>
       <Button.Group id="pageBtn">
-        <Button onClick={goBack} labelPosition='left' icon='left chevron' content='Back' />
-        <Button onClick={goForword} labelPosition='right' icon='right chevron' content='Next' />
+        <Button onClick={goBack} color='twitter' labelPosition='left' icon='left chevron' content='Back' />
+        <Button onClick={goForword} color='twitter' labelPosition='right' icon='right chevron' content='Next' />
       </Button.Group>
       <br />
       <p> </p>

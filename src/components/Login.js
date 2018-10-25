@@ -29,7 +29,7 @@ const Login = (props) => {
             <input type="password" name="password" />
            </label>
            </Form.Field>
-           <Button type="submit" value="Submit">Login</Button>
+           <Button type="submit" value="Submit" color='youtube'>Login</Button>
           </Form>
         </div>
 
@@ -48,7 +48,7 @@ const Login = (props) => {
             <input type="password" name="password" />
            </label>
            <br />
-           <Button type="submit" value="Submit">Sign Up</Button>
+           <Button type="submit" value="Submit" color='youtube'>Sign Up</Button>
            </Form.Field>
           </Form>
         </div>
