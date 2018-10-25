@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import Adapter from '../Adapter';
 import VideoList from './VideoList'
 import { connect } from 'react-redux';
 

@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Route, Switch, Redirect, withRouter} from 'react-router-dom';
+import { Route, Switch, withRouter} from 'react-router-dom';
 import NavBar from './components/NavBar'
 import Login from './components/Login'
 import Home from './components/Home'
 import Profile from './components/Profile'
-import Adapter from './Adapter';
 import { connect } from 'react-redux';
 
 class App extends Component {

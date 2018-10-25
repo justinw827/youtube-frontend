@@ -44,7 +44,7 @@
   width: 40%;
   border-style: solid;
   border-width: 1px;
-  box-shadow: 1px 1px 25px 1px;
+  box-shadow: 1px 1px 20px 1px;
   margin: 5em 2em 0em 2em;
   padding: 3em 0em 3em 0em;
 }
@@ -58,13 +58,15 @@
   width: 40%;
   border-style: solid;
   border-width: 1px;
-  box-shadow: 1px 1px 25px 1px;
+  box-shadow: 1px 1px 20px 1px;
   margin: 5em 2em 0em 2em;
   padding: 3em 0em 3em 0em;
 }
 
 #form-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #profile-name {

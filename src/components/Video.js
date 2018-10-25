@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Card, Icon, Image, Button, Label } from 'semantic-ui-react';
+import { Card, Icon, Button, Label } from 'semantic-ui-react';
 
 import Adapter from '../Adapter';
 
@@ -23,7 +23,7 @@ class Video extends Component {
   handleLike = () => {
     if (this.props.userId < 0) {
       alert("Please signin to like videos")
-    } else if (this.props.userVideos.find(video => video.id.videoId == this.props.video.id.videoId)){
+    } else if (this.props.userVideos.find(video => video.id.videoId === this.props.video.id.videoId)){
       alert("You aleady liked this video")
     } else {
       const url = "http://localhost:3001/api/v1/videos/like"
@@ -50,7 +50,7 @@ class Video extends Component {
   }
 
   render() {
-    const {video, handleLike} = this.props
+    const {video} = this.props
     const videoId = video.id.videoId;
     const videoUrl = `http://www.youtube.com/embed/${videoId}`;
 
