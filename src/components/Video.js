@@ -8,7 +8,7 @@ class Video extends Component {
 
     state = {
       likes: 0,
-      btnColor: ""
+      btnColor: "red"
     }
 
   componentDidMount() {
@@ -42,7 +42,7 @@ class Video extends Component {
       .then(likes => {
         this.setState({
           likes: likes.length,
-          btnColor: "red"
+          btnColor: "youtube"
         })
         this.props.addUserVideo(this.props.video)
       })
@@ -58,7 +58,7 @@ class Video extends Component {
 
     return (
         <Card>
-        <iframe src={videoUrl} frameBorder="0" allowFullScreen></iframe>
+        <iframe title={videoUrl} src={videoUrl} frameBorder="0" allowFullScreen></iframe>
         <Card.Content>
           <Card.Header>{video.snippet.title}</Card.Header>
           <Card.Meta>

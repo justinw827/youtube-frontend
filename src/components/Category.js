@@ -4,7 +4,7 @@ import { Button } from 'semantic-ui-react'
 const Category = (props) => {
 
   return (
-      <Button style={{padding: '1em 4em 1em 4em', marginLeft: '1em'}} onClick={props.handleCategory} content={props.name} />
+      <Button style={{padding: '1em 2em 1em 2em', marginLeft: '0.5em', fontSize: '15pt', borderRadius: '0.35em'}} color='twitter' onClick={props.handleCategory} content={props.name} />
   )
 }
 

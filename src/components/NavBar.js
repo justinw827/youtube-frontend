@@ -19,7 +19,7 @@ class NavBar extends Component {
     return (
       <Segment inverted>
         <Menu inverted pointing secondary>
-          <NavLink exact to="/">
+          <NavLink exact to="/" componentclass='span'>
             <Menu.Item
               name='home'
               active={activeItem === 'http://localhost:3000/'}
