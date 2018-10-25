@@ -15,8 +15,10 @@ const getUrl = (term, maxResults) => (
 class Home extends Component {
 
   handleSearch = event => {
+    event.preventDefault()
     // Get the input from the search bar
-    let searchInput = event.target.value
+    let searchInput = event.target.children[0].children[0].children[0].value
+    console.log(searchInput);
 
     // Create URL endpoint with search input
     const url = getUrl(searchInput, 45)
