@@ -14,22 +14,32 @@ class NavBar extends Component {
   }
 
   render() {
-    const { activeItem } = this.state
+    const activeItem = window.location.href
 
     return (
       <Segment inverted>
         <Menu inverted pointing secondary>
-          <NavLink exact to="/"><Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} /></NavLink>
-          <NavLink exact to="/profile"><Menu.Item
-            name='profile'
-            active={activeItem === 'profile'}
-            onClick={this.handleItemClick}
-          /></NavLink>
-        <NavLink exact to="/login"><Menu.Item
+          <NavLink exact to="/">
+            <Menu.Item
+              name='home'
+              active={activeItem === 'http://localhost:3000/'}
+              onClick={this.handleItemClick}
+            />
+          </NavLink>
+          <NavLink exact to="/profile">
+            <Menu.Item
+              name='profile'
+              active={activeItem === 'http://localhost:3000/profile'}
+              onClick={this.handleItemClick}
+            />
+          </NavLink>
+        <NavLink exact to="/login">
+          <Menu.Item
             name='login/signup'
-            active={activeItem === 'login/signup'}
+            active={activeItem === 'http://localhost:3000/login'}
             onClick={this.handleItemClick}
-          /></NavLink>
+          />
+        </NavLink>
         <Menu.Item
             name='logout'
             active={activeItem === 'logout'}
